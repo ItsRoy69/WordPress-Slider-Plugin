@@ -20,7 +20,7 @@
 <div <?php echo wp_kses_data( $wrapper_attributes ) . 'data-swiper="' . esc_attr( $swiper_attr ) . '"'; ?>>
 
 	<div class="swiper-wrapper">
-		<?php echo $content; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+		<?php echo $content; ?>
 	</div>
 
 </div>

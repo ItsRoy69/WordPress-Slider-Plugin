@@ -3,7 +3,10 @@ import { Autoplay, Keyboard, Navigation, Pagination } from 'swiper/modules';
 
 export function SwiperInit( container, options = {} ) {
 	const parameters = {
-		autoplay: options?.autoplay ?? true,
+		autoplay: {
+            delay: options?.slideSpeed ?? 3000,
+            ...options.autoplay,
+        },
 		centeredSlides: options?.centerSlides ?? false,
 		createElements: true,
 		grabCursor: options?.grabCursor ?? true,
