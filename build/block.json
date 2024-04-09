@@ -5,12 +5,48 @@
   "version": "0.1.0",
   "title": "Word Press Slider Plugin",
   "category": "widgets",
-  "icon": "smiley",
-  "description": "Example block scaffolded with Create Block tool.",
+  "icon": "slides",
+  "keywords": [
+    "carousel",
+    "slideshow"
+  ],
+  "attributes": {
+    "autoplay": {
+      "type": "boolean",
+      "default": true
+    },
+    "navigation": {
+      "type": "boolean",
+      "default": true
+    },
+    "pagination": {
+      "type": "boolean",
+      "default": true
+    }
+  },
   "example": {},
   "supports": {
-    "html": false
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "className": true,
+    "color": {
+      "background": true,
+      "gradients": true,
+      "link": true,
+      "text": true
+    },
+    "spacing": {
+      "padding": true,
+      "margin": [
+        "top",
+        "bottom"
+      ]
+    }
   },
+  "description": "Example block scaffolded with Create Block tool.",
   "textdomain": "wordpress-slider-plugin",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
